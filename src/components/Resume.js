@@ -54,7 +54,7 @@ const Resume = () => {
               </div>
               <div className="highlight-item">
                 <h4>Certifications</h4>
-                <p>Google Cloud Platform 1, Workato Architect Level 1, Scrum Master, Microsoft Azure</p>
+                <p>CSPO, AWS Certified Cloud Practitioner (CLF-C02), Google Cloud Digital Leader</p>
               </div>
               <div className="highlight-item">
                 <h4>Languages</h4>

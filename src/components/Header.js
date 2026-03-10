@@ -28,7 +28,7 @@ const Header = ({ theme, toggleTheme }) => {
           <button onClick={() => scrollToSection('about')}>About</button>
           <button onClick={() => scrollToSection('experience')}>Experience</button>
           <button onClick={() => scrollToSection('resume')}>Resume</button>
-          <a href="mailto:chackorichard02@gmail.com" className="nav-email">chackorichard02@gmail.com</a>
+          <button onClick={() => scrollToSection('contact')}>Contact</button>
           <button className="theme-toggle" onClick={toggleTheme} aria-label="Toggle theme">
             {theme === 'light' ? <FiMoon size={26} /> : <FiSun size={26} />}
           </button>
