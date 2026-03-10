@@ -4,7 +4,11 @@
       "Bash(npm install:*)",
       "Bash(gh repo:*)",
       "Bash(git remote:*)",
-      "Bash(git:*)"
+      "Bash(git:*)",
+      "Bash(npm run:*)",
+      "Bash(curl:*)",
+      "Bash(gh api:*)",
+      "Bash(open:*)"
     ]
   }
 }
