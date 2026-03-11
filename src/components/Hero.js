@@ -52,12 +52,8 @@ const Hero = () => {
           </div>
         </div>
         <div className="hero-image">
-          <div className="image-placeholder">
-            <div className="floating-elements">
-              <div className="element element-1"></div>
-              <div className="element element-2"></div>
-              <div className="element element-3"></div>
-            </div>
+          <div className="profile-photo-wrapper">
+            <img src="/profilephoto.png" alt="Richard Chacko" className="profile-photo" />
           </div>
         </div>
       </div>
