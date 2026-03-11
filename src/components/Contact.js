@@ -30,34 +30,7 @@ const Contact = () => {
           <p className="section-subtitle">Have a question or want to work together? Drop me a message.</p>
         </div>
 
-        <div className="contact-layout">
-          <div className="contact-details">
-            <h3>Let's talk</h3>
-            <p>I'm always open to new opportunities, collaborations, or just a friendly chat. Feel free to reach out!</p>
-
-            <div className="contact-cards">
-              <div className="contact-card">
-                <div className="contact-card-icon blue">
-                  <FiMail size={20} />
-                </div>
-                <div>
-                  <h4>Email</h4>
-                  <a href="mailto:chackorichard02@gmail.com">chackorichard02@gmail.com</a>
-                </div>
-              </div>
-
-              <div className="contact-card">
-                <div className="contact-card-icon green">
-                  <FiUser size={20} />
-                </div>
-                <div>
-                  <h4>LinkedIn</h4>
-                  <a href="https://www.linkedin.com/in/richard-chacko" target="_blank" rel="noopener noreferrer">richard-chacko</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
+        <div className="contact-layout contact-form-only">
           <form className="contact-form" onSubmit={handleSubmit}>
             <div className="form-group">
               <label htmlFor="name">
