@@ -2,10 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { FiLinkedin, FiGithub } from 'react-icons/fi';
 
 const roles = [
-  'Data Product Manager',
-  'Project Manager',
-  'Full Stack Developer',
+  'Product Manager',
   'Product Operations Manager',
+  'Data Analyst',
 ];
 
 const Hero = () => {
