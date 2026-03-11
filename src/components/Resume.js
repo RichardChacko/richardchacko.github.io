@@ -47,21 +47,6 @@ const Resume = () => {
               to your next project.
             </p>
 
-            <div className="resume-highlights">
-              <div className="highlight-item">
-                <h4>Education</h4>
-                <p>Trent University — Bachelor of Business Administration, specialization in Technology Management</p>
-              </div>
-              <div className="highlight-item">
-                <h4>Certifications</h4>
-                <p>CSPO, AWS Certified Cloud Practitioner (CLF-C02), Google Cloud Digital Leader</p>
-              </div>
-              <div className="highlight-item">
-                <h4>Languages</h4>
-                <p>English, Malayalam, Hindi</p>
-              </div>
-            </div>
-
             <button className="btn-primary" onClick={handleDownload}>
               Download Resume
             </button>

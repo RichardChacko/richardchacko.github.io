@@ -50,6 +50,31 @@ const About = () => {
               Beyond the technical lifecycle, I position myself at the intersection of the customer and the business, acting as a dedicated advocate for both. My goal is to bridge the gap between user expectations and commercial objectives, delivering solutions that make our customers feel confident in the technology and ensuring the products we build are as reliable as they are innovative.
             </p>
 
+            <div className="about-info-grid">
+              <div className="about-info-card">
+                <div className="about-info-icon blue">🎓</div>
+                <div>
+                  <h4>Education</h4>
+                  <p>Trent University — BBA, Technology Management</p>
+                  <span className="about-info-date">Sep. 2020 – Apr. 2025</span>
+                </div>
+              </div>
+              <div className="about-info-card">
+                <div className="about-info-icon green">📜</div>
+                <div>
+                  <h4>Certifications</h4>
+                  <p>CSPO, AWS Certified Cloud Practitioner (CLF-C02), Google Cloud Digital Leader</p>
+                </div>
+              </div>
+              <div className="about-info-card">
+                <div className="about-info-icon violet">🌐</div>
+                <div>
+                  <h4>Languages</h4>
+                  <p>English, Malayalam, Hindi</p>
+                </div>
+              </div>
+            </div>
+
             <div className="skills">
               {skillCategories.map((cat, catIndex) => (
                 <div key={catIndex} className="skill-category">

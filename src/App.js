@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
 import Experience from './components/Experience';
+import Projects from './components/Projects';
 import Resume from './components/Resume';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -19,10 +20,17 @@ function App() {
     <div className="App" data-theme={theme}>
       <Header theme={theme} toggleTheme={toggleTheme} />
       <Hero />
+      <div className="section-divider" />
       <About />
+      <div className="section-divider" />
       <Experience />
+      <div className="section-divider" />
+      <Projects />
+      <div className="section-divider" />
       <Resume />
+      <div className="section-divider" />
       <Contact />
+      <div className="section-divider" />
       <Footer />
     </div>
   );

@@ -27,6 +27,7 @@ const Header = ({ theme, toggleTheme }) => {
         <nav className="nav">
           <button onClick={() => scrollToSection('about')}>About</button>
           <button onClick={() => scrollToSection('experience')}>Experience</button>
+          <button onClick={() => scrollToSection('projects')}>Projects</button>
           <button onClick={() => scrollToSection('resume')}>Resume</button>
           <button onClick={() => scrollToSection('contact')}>Contact</button>
           <button className="theme-toggle" onClick={toggleTheme} aria-label="Toggle theme">
