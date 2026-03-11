@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { FiSun, FiMoon } from 'react-icons/fi';
+import { FiSun, FiMoon, FiMenu, FiX } from 'react-icons/fi';
 
 const Header = ({ theme, toggleTheme }) => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,6 +17,7 @@ const Header = ({ theme, toggleTheme }) => {
     document.getElementById(sectionId)?.scrollIntoView({
       behavior: 'smooth'
     });
+    setMenuOpen(false);
   };
 
   return (
@@ -24,7 +26,10 @@ const Header = ({ theme, toggleTheme }) => {
         <div className="logo">
           <h3>Richard Chacko</h3>
         </div>
-        <nav className="nav">
+        <button className="hamburger" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu">
+          {menuOpen ? <FiX size={26} /> : <FiMenu size={26} />}
+        </button>
+        <nav className={`nav ${menuOpen ? 'nav-open' : ''}`}>
           <button onClick={() => scrollToSection('about')}>About</button>
           <button onClick={() => scrollToSection('experience')}>Experience</button>
           <button onClick={() => scrollToSection('projects')}>Projects</button>

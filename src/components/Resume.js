@@ -49,7 +49,7 @@ const Resume = () => {
               to your next project.
             </p>
 
-            <button className="btn-primary" onClick={handleDownload}>
+            <button className="btn-submit" onClick={handleDownload}>
               Download Resume
             </button>
           </div>
