@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { FiSend, FiMail, FiUser, FiMessageSquare } from 'react-icons/fi';
+import useScrollReveal from '../hooks/useScrollReveal';
 
 const Contact = () => {
+  const [ref, isVisible] = useScrollReveal();
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [submitted, setSubmitted] = useState(false);
 
@@ -21,7 +23,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="contact">
+    <section id="contact" ref={ref} className={`contact scroll-reveal ${isVisible ? 'revealed' : ''}`}>
       <div className="container">
         <div className="section-header">
           <h2 className="section-title">Connect With Me</h2>

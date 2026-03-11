@@ -1,6 +1,8 @@
 import React from 'react';
+import useScrollReveal from '../hooks/useScrollReveal';
 
 const Resume = () => {
+  const [ref, isVisible] = useScrollReveal();
   const handleDownload = () => {
     const link = document.createElement('a');
     link.href = '/Richard_Chacko_Resume.pdf';
@@ -9,7 +11,7 @@ const Resume = () => {
   };
 
   return (
-    <section id="resume" className="resume">
+    <section id="resume" ref={ref} className={`resume scroll-reveal ${isVisible ? 'revealed' : ''}`}>
       <div className="container">
         <div className="section-header">
           <h2 className="section-title">Resume</h2>

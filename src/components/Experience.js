@@ -1,6 +1,8 @@
 import React from 'react';
+import useScrollReveal from '../hooks/useScrollReveal';
 
 const Experience = () => {
+  const [ref, isVisible] = useScrollReveal();
   const experiences = [
     {
       title: "Data Product Manager Intern",
@@ -49,7 +51,7 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="experience">
+    <section id="experience" ref={ref} className={`experience scroll-reveal ${isVisible ? 'revealed' : ''}`}>
       <div className="container">
         <div className="section-header">
           <h2 className="section-title">Experience</h2>

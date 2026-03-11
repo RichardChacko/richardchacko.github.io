@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { FiLinkedin, FiGithub } from 'react-icons/fi';
 
 const roles = [
   'Data Product Manager',
@@ -49,6 +50,14 @@ const Hero = () => {
             }>
               View Resume
             </button>
+          </div>
+          <div className="hero-socials">
+            <a href="https://www.linkedin.com/in/richard-chacko" target="_blank" rel="noopener noreferrer" className="hero-social-link" aria-label="LinkedIn">
+              <FiLinkedin size={22} />
+            </a>
+            <a href="https://github.com/RichardChacko" target="_blank" rel="noopener noreferrer" className="hero-social-link" aria-label="GitHub">
+              <FiGithub size={22} />
+            </a>
           </div>
         </div>
         <div className="hero-image">

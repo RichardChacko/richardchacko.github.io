@@ -1,5 +1,6 @@
 import React from 'react';
 import { FiAward, FiTrendingUp } from 'react-icons/fi';
+import useScrollReveal from '../hooks/useScrollReveal';
 
 const projects = [
   {
@@ -37,8 +38,9 @@ const projects = [
 ];
 
 const Projects = () => {
+  const [ref, isVisible] = useScrollReveal();
   return (
-    <section id="projects" className="projects">
+    <section id="projects" ref={ref} className={`projects scroll-reveal ${isVisible ? 'revealed' : ''}`}>
       <div className="container">
         <div className="section-header">
           <h2 className="section-title">Projects</h2>
