@@ -1,8 +1,25 @@
 import React from 'react';
-import { FiAward, FiTrendingUp } from 'react-icons/fi';
+import { FiAward, FiTrendingUp, FiMap, FiExternalLink } from 'react-icons/fi';
 import useScrollReveal from '../hooks/useScrollReveal';
 
 const projects = [
+  {
+    title: 'RouteIQ',
+    subtitle: 'Fleet Route Optimization Dashboard',
+    period: 'Mar. 2026',
+    icon: <FiMap size={24} />,
+    color: 'blue',
+    link: 'https://richardchacko.github.io/route-optimizer',
+    description:
+      'Built an interactive dashboard to analyze actual vs optimal routes for a 100-vehicle fleet across the Greater Toronto Area, identifying inefficiencies, bottleneck zones, and fuel waste savings.',
+    highlights: [
+      'Simulated 600 trips for 100 real make/model vehicles (Ford, Toyota, RAM, etc.)',
+      'Interactive Leaflet map with route comparison and congestion heatmap',
+      'Recharts visualizations for fuel waste, efficiency trends, and distance analysis',
+      'Sortable, searchable trip table with efficiency scoring',
+    ],
+    tech: ['React', 'Leaflet', 'Recharts', 'JavaScript', 'Vite'],
+  },
   {
     title: 'Datality',
     subtitle: 'GEOTAB Intern Case Competition — 3rd Place Winner',
@@ -44,7 +61,7 @@ const Projects = () => {
       <div className="container">
         <div className="section-header">
           <h2 className="section-title">Projects</h2>
-          <p className="section-subtitle">Highlights from competitions and academic work</p>
+          <p className="section-subtitle">Side projects, competitions, and academic work</p>
         </div>
 
         <div className="projects-grid">
@@ -67,6 +84,11 @@ const Projects = () => {
                   <span className="project-tech-tag" key={i}>{t}</span>
                 ))}
               </div>
+              {project.link && (
+                <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link-btn">
+                  View Live <FiExternalLink size={14} />
+                </a>
+              )}
             </div>
           ))}
         </div>

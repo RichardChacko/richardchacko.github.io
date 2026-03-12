@@ -949,6 +949,27 @@ body {
   color: #34d399;
 }
 
+/* Project Live Link Button */
+.project-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 1rem;
+  padding: 0.5rem 1.2rem;
+  background: var(--gradient);
+  color: #ffffff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-link-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
 /* Resume Styles */
 .resume {
   padding: 8rem 0;
